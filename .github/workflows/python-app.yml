@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest pytest-cov
-        pytest --doctest-modules --cov=com --cov-report=XML > test-results.html
+        pytest --doctest-modules --cov=com --cov-report=html > test-results.html
     - name: Commit and push
       run: |
         git config user.name "Automated"
