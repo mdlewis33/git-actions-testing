@@ -42,7 +42,7 @@ jobs:
       run: |
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
-        git add test-results.json
+        git add test-results.html
         timestamp=$(date -u)
         git commit -am "Latest data: ${timestamp}" 
         git push
